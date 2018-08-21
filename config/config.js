@@ -1,0 +1,1 @@
+module.exports.SEED_TOKEN = 'tk.proj-udemy_0009';

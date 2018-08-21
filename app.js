@@ -2,24 +2,29 @@
 var express = require('express');
 var mongoose = require('mongoose');
 
+// Importar Rutas
+var appRoutes = require('./routes/app');
+var userRoutes = require('./routes/user');
+var loginRoutes = require('./routes/login');
+
 // Inicializar variables
 var app = express();
 
-//Conexión MongoDB
+// Body-Parser
+var bodyParser = require('body-parser');
+// Parsear application/x-www-form-urlencoded a json
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// Rutas
+app.use('/user', userRoutes);
+app.use('/login', loginRoutes);
+app.use('/', appRoutes);
+
+// Conexión MongoDB
 mongoose.connection.openUri('mongodb://localhost:27017/hospitalDB', (err, res) => {
     if (err) throw err;
     console.log('Mongo Server: \x1b[34m%s\x1b[0m', 'online');
-});
-
-// Rutas
-// Las rutas reciben 3 callbacks (request, response, next)
-// el next le indica a express que ejecute la siguiente instrucción
-// por lo general next se utiliza en los middlewares
-app.get('/', (req, res, next) => {
-    res.status(200).json({
-        ok: true,
-        message: 'Petición realizada correctamente'
-    });
 });
 
 // Escuchar - puerto del servidor
