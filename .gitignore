@@ -1,2 +1,5 @@
 node_modules/
+uploads/users/
+uploads/doctors/
+uploads/hospitals/
 package-lock.json

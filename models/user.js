@@ -34,6 +34,8 @@ var userSchema = new Schema({
         default: 'USER_ROLE',
         enum: validRoles
     }
+}, {
+    collection: 'users'
 });
 
 // Mongoose Plugin Use
