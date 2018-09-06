@@ -3,3 +3,4 @@ uploads/users/
 uploads/doctors/
 uploads/hospitals/
 package-lock.json
+demos/google-sigin-demo/node_modules

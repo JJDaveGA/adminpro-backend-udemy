@@ -39,5 +39,5 @@ mongoose.connection.openUri('mongodb://localhost:27017/hospitalDB', (err, res) =
 
 // Escuchar - puerto del servidor
 app.listen(4000, () => {
-    console.log('Express server is running on port 3000: \x1b[34m%s\x1b[0m', 'online');
+    console.log('Express server is running on port 4000: \x1b[34m%s\x1b[0m', 'online');
 });
