@@ -1,12 +1,12 @@
 # Backend-Server
 
-Este es el código necesario para el backend con conexión a MongoDB utilizando el ODM Mongoose.
+This is the needed code for the backend with a MongoDB connection, using Mongoose ODM.
 
-Para ejecutarlo, es necesario reconstruir los módulos de NodeJS usando el siguiente comando:
+For execute this demo, is necessary to rebuild our node modules writing the next command:
 
 ```
 npm install
 ```
 
-## Dentro de demos/google-sign-in
-Existe un pequeño demo para probar la autenticación de Google OAuth en un front-end básico.
+## Inside demos/google-sign-in
+There is a little demo for try the Google OAuth authentication in a basic front-end.

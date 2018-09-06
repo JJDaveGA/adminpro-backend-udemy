@@ -1,8 +1,8 @@
 # Google-Sigin-Demo
 
-Esta carpeta contiene un pequeño front-end para obtener el token de Google y probarlo contra nuestro backend server.
+This direcyory contains a little front-end demo for obtain the Google token and try it against our backend server.
 
-Para ejecutarlo, es necesario reconstruir los módulos de NodeJS usando el siguiente comando:
+For execute this demo, is necessary to rebuild our node modules writing the next command:
 
 ```
 npm install
